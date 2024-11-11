@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Image Exhancer</header>
+    <input type="file" class="file-input" id="file-input" accept="image/*" >
+    <div class="upload-img" id="upload-img">
+        <img src="image-placeholder.svg" class="image">
+    </div>
+    <div class="input-url">
+    <input type="url" id="url-input" placeholder="URL">
+    </div>
+    <br>
+    <button class="exhance">Exhance</button>
+    <div class="exhanced">
+    <img class="img" id="realImg">
+    <img class="img" id="newImg">
+    <button class="download">Download</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

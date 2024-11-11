@@ -1,0 +1,143 @@
+body{
+    padding:200px 0px 0px 0px;
+    margin:0px;
+    text-align: center;
+}
+
+header{
+    text-align:center;
+    background-color:black;
+    color:white;
+    padding: 5px 0px 5px 0px;
+    font-size: 40px;
+    position: fixed;
+    z-index: 1;
+    top:0px;
+    width: 100%;
+}
+
+.upload-img{
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 427px;
+    height: 306px;
+    border-radius: 10px;
+    box-shadow:0px 0px 8px;
+    display:inline-block;
+    justify-items: center;
+    cursor: pointer;
+
+}
+
+.image{
+    position: relative;
+    z-index: -1;
+}
+
+button:active{
+    box-shadow: 0px 0px 20px rgb(184, 183, 183);
+    animation: btn 0.3s linear infinite ;
+}
+.exhance{
+    border-width: 0px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(187, 186, 186);
+    padding: 7px 20px;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 143, 143,0.7) ,rgba(255, 170, 100,0.7) ,rgba(255, 253, 137,0.7) , rgba(168, 255, 133,0.7),
+        rgba(156, 255, 238,0.7) ,rgba(160, 176, 255,0.7),rgba(255, 155, 233,0.7),rgba(255, 160, 160,0.7)
+    );
+    background-size:500%;
+    animation: glow 20s linear infinite ;
+    color: rgb(255,255,255);
+    border-radius: 10px;
+}
+
+.exhance:hover{
+    box-shadow: 0px 0px 20px rgb(184, 183, 183);
+}
+
+#file-input{
+    display: none;
+}
+.input-url{
+    display: flex;
+    justify-content: center;
+
+}
+#url-input{
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 1px dotted black;
+    background: transparent;
+    position: relative;
+    bottom: 70px;
+}
+.exhanced{
+    display: none;
+}
+.img{
+    margin: 20px;
+}
+
+#newImg{
+    filter: brightness(130%)
+            contrast(90%)
+            saturate(140%)
+            sepia(50%);
+    image-rendering: pixelated;
+}
+
+.download{
+    position: absolute;
+    top:100px;
+    right: 10px;
+    border-width: 0px;
+    box-shadow:0px 0px 10px rgb(196, 195, 195);
+    padding: 7px 20px;
+    border-radius:20px;
+
+    background: linear-gradient(
+        45deg,
+        rgba(255, 143, 143,0.7) ,rgba(255, 170, 100,0.7) ,rgba(255, 253, 137,0.7) , rgba(168, 255, 133,0.7),
+        rgba(156, 255, 238,0.7) ,rgba(160, 176, 255,0.7),rgba(255, 155, 233,0.7),rgba(255, 160, 160,0.7)
+    );
+    background-size:500%;
+    animation: glow 20s linear infinite reverse;
+    color: white;
+    font-size:20px;
+}
+
+.download:hover{
+    box-shadow:0px 0px 20px rgb(196, 195, 195);
+}
+
+.download:active{
+    animation: btn 0.3s linear 1 ;
+}
+
+@keyframes btn{
+    0%{
+        padding: 7px 20px;
+    }
+    50%{
+        padding: 6.5px 19.5px;
+    }
+    100%{
+        padding: 7px 20px;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background-position:0 0;
+    }
+    50%{
+        background-position:250% 0;
+    }
+    100%{
+        background-position:500% 0;
+    }
+}
