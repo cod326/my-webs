@@ -44,9 +44,9 @@ exhance.onclick = () => {
         newImg.setAttribute("src", urlInput.value);
     }
 
-    if (realImg.clientWidth > 200) {
-        realImg.style.width = "200px";
-        newImg.style.width = "200px";
+    if (realImg.clientWidth > 125) {
+        realImg.style.width = "125px";
+        newImg.style.width = "125px";
     }
 }
 
