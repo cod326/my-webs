@@ -1,0 +1,284 @@
+*{
+    outline: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.first-page{
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 90000;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    height:100%;
+    text-align: center;
+}
+
+.first-logo{
+    filter: drop-shadow(3px 1px 1px rgb(255, 99, 99));
+    margin: 20px;
+    width:50%;
+}
+
+.content{
+    text-align: left;
+    margin: 20px;
+    color: black;
+}
+
+.content a{
+    color:rgba(0, 0, 255, 0.63)
+}
+
+.click{
+    width: 40%;
+}
+
+.first-page h1{
+    color: blue;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.603);
+    margin:0px;
+    padding:200px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+
+}
+
+.bg{
+    background-color: rgb(122, 122, 122);
+    position: fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width: 100%;
+    display: block;
+}
+
+.info{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info{
+    position: fixed;
+    width:300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.user-info input{
+    margin: 30px 0px;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(223, 223, 223);
+    background: transparent;
+}
+
+.user-info button,
+.select-btn{
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(223, 223, 223);
+    background: transparent;
+}
+
+.select-type{
+    position: fixed;
+    width:250px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    text-align: center;
+    display: none;
+}
+
+.label{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-around;
+}
+
+.typing-game {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0px 0px 20px rgb(223, 223, 223);
+}
+
+.game-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.words-to-write{
+    padding: 20px 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color:rgba(221, 221, 221, 0.5);
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    bottom:50px;
+    z-index: -1;
+}
+
+.text-input{
+    cursor: text;
+}
+
+
+
+#input-text{
+    width: 90%;
+    height: 20px;
+    padding: 10px 10px;
+    border: 0px;
+    background: transparent;
+    border-radius: 20px;
+    color:white;
+    display: none;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#startBtn{    
+    padding: 10px 10px;
+    border: 0px;
+    background: transparent;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 20px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.199);
+}
+.text-content{
+    text-align: center;
+}
+
+.result-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgb(216, 216, 216);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.result{
+    background-color: white;
+    border: 1px solid black;
+    width: 500px;
+    max-width: 70%;
+    height: 75%;
+    padding: 30px;
+    color:black;
+}
+
+.result *{
+    color: black;
+}
+
+.time a,.date {
+    color: blue;
+}
+
+.name{
+    text-transform: uppercase;
+}
+
+.time{
+    float: right;
+}
+
+#reasult-name{
+    font-size: 30px;
+}
+
+.data{
+    font-size: 20px;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    mix-blend-mode: color-burn ;
+}
+
+.logo{
+    width: 60%;
+    margin: 20px;
+    filter: drop-shadow(3px 1px 1px rgb(255, 99, 99));
+}
+
+
+
+
+@media (max-width: 600px) {
+    .typing-game {
+        width: 75%;
+        height: 250px;
+    }
+
+    .words-to-write{
+        font-size: 15px;
+        height: 100px;
+    }
+    #input-text{
+        font-size: 15px;
+        left:18px;
+        bottom: 1.5px;
+    }
+
+    .user-info{
+        width: 75%;
+    }
+
+    #startBtn{
+        position:static;
+        bottom:30px;
+    }
+
+    .result{
+        padding: 15px;
+    }
+
+    .game-info{
+        height: 25px;
+        font-size: 8px;
+    }
+}

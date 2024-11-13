@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Game</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.jpg">
+</head>
+<body>
+  <header>
+  <img class="logo" src="logo.jpg">
+  </header>
+  <div class="info">
+    <div class="bg"></div>
+    <div class="user-info">
+      <div class="title">Typing Game</div>
+      <input type="text" class="user-name" placeholder="Full Name" class="text-input">
+      <br>
+      <button class="info-btn">Click</button>
+    </div>
+    <div class="select-type">
+      <div class="title">Select type</div>
+      <div class="label">
+        <label>
+          <input type="radio" value="words" name="type-radio" id="words"> Words
+        </label>
+        <label>
+          <input type="radio" value="sentences" name="type-radio" id="sentences"> Sentences
+        </label>
+      </div>
+      <br>
+      <button class="select-btn">Start</button>
+    </div>
+  </div>
+  <div class="typing-game">
+    <div class="game-info">
+      <p>Hello</p>
+      <p>Time Left: <span class="timer">300</span> seconds</p>
+      <p>Wrong Words: <span class="Wrong">0</span></p>
+      <p>Score: <span class="score">0</span></p>
+    </div>
+    <div class="text-content">
+      <input type="text" id="input-text" class="text-input">
+      <div class="words-to-write"></div>
+      <br>
+      <button id="startBtn">Start Game</button>
+    </div>
+  </div>
+  <div class="result-container">
+    <div class="result">
+      Date: <span class="date"></span>
+      <div class="time"></div>
+      <hr>
+      <div class="name" id="result-name">vxc</div>
+      <br>
+      <div class="data">
+        WPM: <span class="WPM">0</span>
+        <br>
+        Score: <span class="score">0</span>
+        <br>
+        Wrong Words: <span class="wrong-words">0</span>
+        <br>
+        Right Words: <span class="right-words">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="first-page">
+  <img class="first-logo" src="logo.jpg">
+  <h1>
+    Welcome To Typing Test 1
+  </h1>
+  <img src="click.jpg" class="click">
+  
+  <div class="content">
+    <a>About it:</a>
+    <br>
+    Typing Game 1  is designed to inprove your typing speed.
+    <br>
+    This is helpful for them who wants to learn touch typing.
+    <br>
+
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
