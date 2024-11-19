@@ -176,7 +176,7 @@ function resetGame() {
 } 
 input.addEventListener('keydown', function(event) {
     if (!input.disabled) {
-        const keysToPrevent = ['Backspace', 'Enter', 'Delete', ' '];
+        const keysToPrevent = ['Enter', 'Backspace', 'Delete', ' '];
         if (keysToPrevent.includes(event.key)) {
             event.preventDefault();
         }
