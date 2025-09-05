@@ -88,5 +88,6 @@ main{
     main{
     align-items: center;
     justify-content: center;
+    overflow:visible;
     }
 }
